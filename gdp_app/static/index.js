@@ -184,6 +184,9 @@ document.querySelectorAll('div.chart').forEach((div) =>{
 		div.querySelector('input').addEventListener('mouseup', () => {
 			MAIN_CHART.updateYears(div.querySelector('input').value)
 		})
+		div.querySelector('input').addEventListener('touchend', () => {
+			MAIN_CHART.updateYears(div.querySelector('input').value)
+		})
 		/*country update*/
 		div.querySelector('select').addEventListener('input', async (e) => {
 			closeAlert()
