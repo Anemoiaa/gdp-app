@@ -1,0 +1,17 @@
+body {
+	background-color:#F0F0F0;
+}
+
+.chart {
+	background-color: white; 
+	border-radius: 6px;
+	border-style: solid; 
+	border-color: white;
+	padding: 10px;
+}
+
+
+.fs-300 {
+	width: 300px;
+}
+

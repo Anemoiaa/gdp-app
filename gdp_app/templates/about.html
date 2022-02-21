@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+	<div class="container d-flex position-relative mt-5">
+		<img src="{{ url_for('static', filename='profile-pic.jpg')}}" class="flex-shrink-0 me-3 w-25 h-75 d-inline-block" alt="profile picture">
+	  	<div >
+	    	<h5 class="mt-0">Custom component with stretched link</h5>
+	    	<p>This is some placeholder content for the custom component. It is intended to mimic what some real-world content would look like, and we're using it here to give the component a bit of body and size.</p>
+	    	<a href="#" class="stretched-link">Go somewhere</a>
+	    </div>
+	</div>
+{% endblock %}
