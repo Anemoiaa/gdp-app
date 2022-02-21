@@ -1,6 +1,5 @@
 import 'https://cdn.jsdelivr.net/npm/echarts@5.3.0/dist/echarts.min.js'
 
-
 class Request {
 	constructor(country, date){
 		this.country = country
@@ -37,6 +36,9 @@ class Chart {
 			const values = this.data.map(obj => Math.trunc(obj.value)).reverse()
 			const title = `GDP ${this.data[0].country.value} / ${years[0]} - ${years[years.length-1]}`
 			return {
+				grid: {
+					right: '1%'
+				},
 				title: {
     				text: title
     			},
@@ -66,6 +68,9 @@ class Chart {
 				}
 			})
 			return {
+				grid: {
+					right: '1%'
+				},
 				title: {
     				text: 'Comparison'
     			},

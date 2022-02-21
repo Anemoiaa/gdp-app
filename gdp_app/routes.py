@@ -1,7 +1,6 @@
 from flask import render_template
 
 from gdp_app import app
-
 from gdp_app.countries import countriesList
 
 
